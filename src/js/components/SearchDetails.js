@@ -68,7 +68,7 @@ class SearchDetails extends Component {
     debugger;
     //this.props.dispatch
     let consumerData = {};
-    consumerData.consumerid = this.props.clientApp.consumer_id;
+    consumerData.consumerid = e.value.value;
    consumerData.body = {
                api_id : this.props.registerApi.apiDetail.api_id   
     };

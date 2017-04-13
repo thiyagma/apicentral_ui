@@ -1,5 +1,5 @@
 import api from './api';
-import { DEFAULTPAGESIZE, GET_TEAM_SUCCESS, ADD_TEAM_SUCCESS  } from '../constants';
+import { DEFAULTPAGESIZE, GET_TEAM_SUCCESS, ADD_TEAM_SUCCESS, ADD_TEAM_MEMEBER_SUCCESS  } from '../constants';
 
 
 export function getTeams(email) {
@@ -28,6 +28,24 @@ export function addTeam(teamData) {
     })
     .catch(error => {
       console.log("Error in adding team" + error);
+    });
+  };
+}
+
+export function addTeamMember(newMemberDetails) {
+  return (dispatch) => {
+    let uri = '/addMembersToTeam';
+    uri += "/" + newMemberDetails.teamId;
+    debugger;
+    let params = {
+      limit: DEFAULTPAGESIZE,
+      offset: 0
+    };
+     api.posts(uri, newMemberDetails.body).then((data) => {
+       dispatch({type: ADD_TEAM_MEMEBER_SUCCESS, result:data})
+    })
+    .catch(error => {
+      console.log("Error in adding team member" + error);
     });
   };
 }
