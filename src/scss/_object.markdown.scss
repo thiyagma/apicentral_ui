@@ -1,0 +1,32 @@
+.markdown-editor {
+  &_container {
+    // border: 1px solid #000000;
+    height: 75vh;
+  }
+
+  &_container--textarea {
+    // border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px !important;
+  }
+  &_container--preview {
+    // border: 1px solid red;
+    min-height: 75vh;
+    line-height: 1.5;
+    padding: 11px 23px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 0px;
+    outline: none;
+    background-color: transparent;
+    code {
+      border: 1px solid rgba(0,0,0,0.15);
+      display: block;
+      overflow-x: auto;
+      padding: 0.5em;
+      color: #333;
+      background: #f8f8f8;
+      -webkit-text-size-adjust: none;
+    }
+  }
+}

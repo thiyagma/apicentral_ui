@@ -1,0 +1,8 @@
+@import 'grommet/scss/hpe/_hpe.defaults.scss';
+
+div.containerResultsControls {
+  border: 2px solid red;
+  overflow: hidden;
+  border-radius: 2px;
+  display: inline-block;
+}

@@ -1,0 +1,92 @@
+.landing-page {
+  &_row1 {
+    background: #2a4357;
+    opacity: 0.8;
+    padding: 24px 48px 24px 24px;
+    margin-left: 36px;
+    display: inline-block;
+
+    div>button {
+      width: 175px;
+      margin: 0px 3px;
+    }
+  }
+
+  // &_row2 {
+  //   .grommetux-heading{
+  //     // color: nth($brand-neutral-colors, 1);
+  //   }
+  // }
+
+  // &_row4 {
+ 
+  // }
+
+  .lp-tiles_tile {
+    p {
+      margin: 0 6px;
+    }
+  }
+
+  .lp-tilesone {
+    li {
+      color: #fff !important;
+    }
+    
+
+    &_box { 
+      height: 193px;
+      margin: 0px 0px 36px 36px;
+      width: 47%;
+
+      img {
+        width: 32px;
+        margin: 10px 10px 10px 20px;
+        display: inline;
+        float: left;
+      }
+    }
+  }
+
+
+
+.left-box-bg{background: #604c65;
+.h-bg-l{background: #68516d; color: #fff; z-index: 999; text-align: left; display: inline;}  
+ul {margin:10px 0px 0px 40px;}
+li {max-width: 576px; margin-left: 0px; font-size: 16px; font-weight: 100; line-height: 28px; color: #cccccc !important;}
+.a-class { max-width: 576px; margin-left: 0px; font-size: 16px; font-weight: 100; line-height: 28px; color: #cccccc !important;}
+li a:hover {color: #ccc;}
+}
+
+
+.right-box-bg{background: #51b6c0;
+.h-bg-2{background: #56c5d0; color: #fff; z-index: 999; text-align: left; display: inline;}  
+ul {margin:10px 0px 0px 40px;}
+li {max-width: 576px; margin-left: 0px; font-size: 16px; font-weight: 100; line-height: 28px; color: #ffffff !important;}
+.a-class { max-width: 576px; margin-left: 0px; font-size: 16px; font-weight: 100; line-height: 28px; color: #ffffff !important;}
+li a:hover {color: #ccc;}
+}
+
+
+
+
+.p-t-12{
+  padding:12px 0px 0px 0px;
+}
+}
+
+//Landing page svg logo styles
+.st0{fill:#E6E7E7;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#4FC1BF;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{fill:#4EC2BF;}
+	.st5{fill:#07AA83;}
+	.st6{fill:#F68C6F;}
+	.st7{font-family:'MetricHPE-Semibold';}
+	.st8{font-size:26px;}
+	.st9{font-family:'MetricHPE-Light';}
+
+
+
+

@@ -1,0 +1,10 @@
+app-dir: C:/Private/Repos/API-Catalog-Grommet-UI
+disk_quota: 2048
+memory: 2048
+name: apicatelogui
+services:
+  apicateloguiapi:
+    label: filesystem
+    plan: free
+    provider: core
+    version: 1.0

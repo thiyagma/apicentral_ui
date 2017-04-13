@@ -1,0 +1,38 @@
+
+.search-page {
+  &_tags {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #fff;
+    margin-top: 0px;
+    min-height: 700px;
+    height: 79vh;
+    box-shadow: 2px 0px 12px #ccc;
+    border: 1px solid #ddd;
+    padding: 24px;
+    text-indent: 16px;
+    line-height: 41px;
+    cursor: pointer;
+  }
+
+  .search_container {
+    width:100%;
+    background: #f1f1f1;
+    padding: 10px 0px 10px 0px;   
+    // border: 1px solid red;
+    // .grommetux-box {
+    //   border: 1px solid orange;
+    // }
+    .search-panel_search .grommetux-search__input:not(:focus) {
+      border-color: rgba(0, 0, 0, 0.12);
+    }
+    .grommetux-anchor__icon .grommetux-control-icon {
+      margin-top: 8px;
+    }
+  }
+}
+.grommet-box{
+  overflow:hidden;
+}
+

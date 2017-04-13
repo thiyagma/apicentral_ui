@@ -1,0 +1,86 @@
+// (C) Copyright 2014-2016 Hewlett Packard Enterprise Development LP
+
+div.tag-input {
+  overflow: hidden;
+  word-wrap: break-word;
+  background-color: transparent;
+  // min-width: inherit;
+  width: 100%;
+  min-height: 36px;
+
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 4px 8px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0px;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+
+  * {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  &> input.input {
+    border: 0px;
+    outline: none;
+    margin: 2px;
+    padding: 0 0 0 5px;
+    float: left;
+    background-color: transparent;
+    min-width: initial;
+    width: initial;
+
+    &:focus {
+      padding: 0 0 0 5px;
+      border-width: 0px;
+      margin: 2px;
+    }
+  }
+}
+
+ul.tag-input__list {
+  margin: 0px;
+  padding: 0px;
+}
+
+li.tag-input__listitem {
+  margin: 2px 2px 2px 0 !important;
+  padding: 0px 2px 0px 5px;
+  display: list-item;
+  float: left;
+  border: 1px solid #d8d9db;
+  background-color: #e2e3e5;
+  color: #555555;
+  position: relative;
+  border-radius: 1px;
+  cursor: default;
+  list-style: none;
+
+  span.tag-input__listitem-box {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    
+  }
+}
+
+a.tag-input__listitem-remove {
+  text-decoration: none !important;
+  color: #aaa;
+  margin: 0px 0px 0px 12px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  // position: absolute;
+  // top: 0px;#F04953;
+  // right: 3px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  float: right;
+}

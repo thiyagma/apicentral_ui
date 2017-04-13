@@ -1,0 +1,129 @@
+@import './_objects.tag-input.scss';
+
+$default-width : 490px;
+$default-input-width: 300px;
+.grommetux-form-field {
+  border-width: 0px;
+}
+.containerMultipleSelector,
+.inputcomponent {
+  width: 100%;
+}
+.input {
+  &-div {
+    box-sizing: border-box;
+    // display: block;
+    .inputcomponent_select,
+    .input_checkbox,
+    label,
+    input,
+    select,
+    textarea {
+      padding: 11px 23px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.15);
+      border-image: initial;
+      border-radius: 0px;
+      background-color: transparent;
+      color: inherit;
+      font: inherit;
+      font-size: 16px;
+      font-size: 1rem;
+      margin: 0px;
+      // padding: 0px;
+      min-width: $default-input-width;
+      width: 100%;
+      min-height: 36px;
+      line-height: 36px;
+      outline: none;
+    }
+
+    .input_label {
+      border-width: 0px;
+      padding-left: 0px;
+    }
+
+    .input_checkbox {
+      min-height: 48px;
+      border-width: 0px;
+      padding: 0px;
+      .checkbox {
+        min-height: 16px;
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+      }
+    }
+
+    .input_textarea {
+      min-height: 150px;
+      width: 100%;
+    }
+
+    .input_select {
+      min-height: 48px;
+      // padding: 0px;
+    }
+  }
+
+  &_groupbox {
+    width: 100%;
+    background-color: transparent;
+    // display: block;
+  }
+
+  &_row {
+    &--box {
+      min-width: $default-width;
+      max-width: $default-width;
+    }
+
+    &--error {
+      input {
+        border-color: #F04953;
+      }
+    }
+  }
+
+  &_help {
+    display: inline-block;
+    height: 36px;
+    cursor: help !important;
+    padding: 6px 12px;
+    width: 36px;
+
+    &--hide {
+      visibility: hidden;
+    }
+
+    .icon {
+      background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjE5MiIgeT0iMjk4LjY2NyIgd2lkdGg9IjQyLjY2NyIgaGVpZ2h0PSI0Mi42NjciIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMTMuMzMzLDBDOTUuNTEzLDAsMCw5NS41MTMsMCwyMTMuMzMzczk1LjUxMywyMTMuMzMzLDIxMy4zMzMsMjEzLjMzM3MyMTMuMzMzLTk1LjUxMywyMTMuMzMzLTIxMy4zMzMgICAgUzMzMS4xNTQsMCwyMTMuMzMzLDB6IE0yMTMuMzMzLDM4OC4wNTNjLTk2LjQ5NSwwLTE3NC43Mi03OC4yMjUtMTc0LjcyLTE3NC43MnM3OC4yMjUtMTc0LjcyLDE3NC43Mi0xNzQuNzIgICAgYzk2LjQ0NiwwLjExNywxNzQuNjAyLDc4LjI3MywxNzQuNzIsMTc0LjcyQzM4OC4wNTMsMzA5LjgyOSwzMDkuODI5LDM4OC4wNTMsMjEzLjMzMywzODguMDUzeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI5Ni4zMiwxNTAuNGMtMTAuOTc0LTQ1LjgzMy01Ny4wMjUtNzQuMDkxLTEwMi44NTgtNjMuMTE3Yy0zOC41MzMsOS4yMjYtNjUuNjQ2LDQzLjc2Mi02NS40NjIsODMuMzg0aDQyLjY2NyAgICBjMi4wMDMtMjMuNTY0LDIyLjcyOS00MS4wNDMsNDYuMjkzLTM5LjA0czQxLjA0MywyMi43MjksMzkuMDQsNDYuMjkzYy00LjM1OCwyMS4yMDQtMjMuMzgsMzYuMTY5LTQ1LjAxMywzNS40MTMgICAgYy0xMC40ODYsMC0xOC45ODcsOC41MDEtMTguOTg3LDE4Ljk4N3YwdjQ1LjAxM2g0Mi42Njd2LTI0LjMyQzI3OS43ODcsMjQxLjM3OCwzMDcuMjMyLDE5NS43MDEsMjk2LjMyLDE1MC40eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+      background-size: 14px;
+      width: 14px;
+      display: inline-block;
+      height: 14px;
+      position: relative;
+      top: 11px;
+    }
+  }
+
+  &_label {
+    // padding: 12px 4px 8px;
+
+    box-sizing: border-box;
+    // &:not(.input_row--label.input_row--label--required) {
+    //   &:after {
+    //     content: ':';
+    //   }
+    // }
+
+    &:after {
+      content: ':';
+    }
+
+    &--required:after {
+      content: ': *';
+    }
+  }
+}

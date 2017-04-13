@@ -1,0 +1,26 @@
+@import 'grommet/scss/hpe/_hpe.defaults.scss';
+
+div.grommetux-menu__drop--align-right {
+  button {
+    display: none;
+  }
+}
+
+div.searchBarBox {
+  display: inline-block;
+  vertical-align: top;
+
+  &[hidden] {
+    display: none;
+  }
+
+  div.searchBarOptions {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  div.searchBarBox {
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+@import 'grommet/scss/hpe/_hpe.defaults.scss';
+
+div.paginator {
+  vertical-align: top;
+  display: inline-block;
+  font-size: .9em;
+  text-align: right;
+  padding-top: 1px;
+  margin-left: 15px;
+
+  &[hidden] {
+    display: none;
+  }
+  
+  span {
+    vertical-align: baseline;
+    color: $brand-color;
+
+    &.paginationInfo {
+      white-space: nowrap;
+      margin: 0 10px;
+
+      span {
+        margin: 0 3px;
+      }
+    }
+
+    &.controls {
+      white-space: nowrap;
+    }
+  }
+
+  select {
+    vertical-align: middle;
+    margin-left: 10px;
+    
+    &:active, &:focus {
+      outline: none;
+      box-shadow: 0 0 1px 2px #2AD2C9;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  div.paginator {
+    width: 100%;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+  }
+}

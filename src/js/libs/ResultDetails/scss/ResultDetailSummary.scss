@@ -1,0 +1,31 @@
+// @import "grommet/scss/grommet-core/settings";
+@import '~grommet/scss/hpe/index';
+html {
+  overflow-y: auto;
+}
+div.DisplayGroup {
+  width: 100%;
+  border: 1px solid transparent;
+  table {
+    margin-left: 15px;
+
+    tr.DisplayValue {
+      td {
+        padding: 4px 2px;
+      }
+
+      td.label {
+        // font-weight: bold;
+        color: $brand-color;
+        width: 250px;
+        &:after {
+          content: ":"
+        }
+      }
+
+      td.value {
+        padding-left: 15px;
+      }
+    }
+  }
+}

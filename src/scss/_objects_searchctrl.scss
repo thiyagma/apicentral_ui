@@ -1,0 +1,28 @@
+.search-ctrl {
+    background-color: transparent;
+    margin:0px auto;
+
+    &_filter {
+        background-color: #f8f8f8;
+        min-width: 150px;
+        width: 150px;
+    }
+
+    &_input {
+        background-color: #fff;
+        min-width: 350px;
+        height: 40px;
+        border: 1px solid #ccf0e8;
+        border-left: none;
+
+
+        .grommetux-control-icon-search {
+            display: none;
+        }
+    }
+
+    &_button {
+        min-width: 150px;
+        border: 0px;
+    }
+}

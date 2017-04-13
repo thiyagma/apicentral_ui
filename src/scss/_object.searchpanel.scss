@@ -1,0 +1,29 @@
+.search-panel {
+
+  &_searchcontainer {
+    width: 800px;
+  }
+
+  // &_search .grommetux-search__input:not(:focus) {
+  //   border-color: rgba(0, 0, 0, 0.15);
+  // }
+ 
+  &_options {
+    .grommetux-radio-button {
+      margin-right: 18px;
+
+      &__control {
+        width: 15px ;
+        height: 15px ;
+        margin-right: 6px;
+      }
+    }
+
+    .grommetux-radio-button__input:checked + .grommetux-radio-button__control:after {
+      top: 2.5px;
+      left: 2.5px;
+      width: 5px ;
+      height: 5px ;
+    }
+  }
+}
